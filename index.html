@@ -47,10 +47,12 @@
         input.addEventListener("input", updateValue);
 
         function updateValue(e) {
-            log.innerHTML = e.target.value;
+            const encodedValue = encodeURIComponent(e.target.value);
+            log.innerHTML = encodedValue;
         }
 
     </script>
+
 
 </body>
 
